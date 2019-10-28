@@ -97,10 +97,6 @@ int main(){
 	pthread_create(&prod, 0, productor, &buf);
 	pthread_create(&consum, 0, consumidor, &buf);
 
-
-
-
-
 	pthread_join(prod, 0);
 	pthread_join(consum, 0);
 
